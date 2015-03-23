@@ -1,11 +1,15 @@
 h1 {
-  color: blue;
+  color: orange;
   font-size: 900%;
   text-align: center;
 }
 
+h1 span{
+  color: blue;
+}
+
 h2 {
-  color: red;
+  color: black;
   text-font: bold;
 }
 
@@ -31,7 +35,38 @@ img {
 }
 
 body{
-  color: red;
+  color: blue;
   text-align: center;
   font-size: 200%;
+}
+
+a:link {
+  color: orange;
+}
+
+/* unvisited link */
+a:link {
+    color: orange;
+}
+
+/* visited link */
+a:visited {
+    color: orange;
+}
+
+/* mouse over link */
+a:hover {
+    color: orange;
+}
+
+/* selected link */
+a:active {
+    color: orange;
+}
+
+.my-class {
+  margin: 12px;
+  border: 2px solid green;
+  padding: 4px;
+  background-color: yellow;
 }
