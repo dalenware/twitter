@@ -1,25 +1,26 @@
 <p id="notice"><%= notice %></p>
+<h1>Dalens Twitter</h1>
 
-<h1>Listing Tweets</h1>
-
+<img src="http://cdn.twitrcovers.com/wp-content/uploads/2014/06/Hand-Cool-l.jpg"
 <table>
   <thead>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <tr>
-      <th>Title</th>
-      <th>Content</th>
+      <th>Tweets</th>
+
       <th colspan="3"></th>
     </tr>
   </thead>
 
-  <tbody>
+<tbody>
     <% @tweets.each do |tweet| %>
       <tr>
         <td><%= tweet.title %></td>
         <td><%= tweet.content %></td>
-        <td><%= link_to 'Show', tweet %></td>
+        <!-- <td><%= link_to 'Show', tweet %></td>
         <td><%= link_to 'Edit', edit_tweet_path(tweet) %></td>
         <td><%= link_to 'Destroy', tweet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+      </tr> -->
     <% end %>
   </tbody>
 </table>
@@ -27,3 +28,21 @@
 <br>
 
 <%= link_to 'New Tweet', new_tweet_path %>
+
+<div id="sharing" class="unselectable">
+
+    <div id="share-buttons">
+
+    <!-- Facebook -->
+    <a href="http://www.facebook.com/sharer.php?u=http://dalenware.com" target="_blank"><img src="img/f.gif" alt="Facebook" /></a>
+
+    <!-- Twitter -->
+    <a href="http://twitter.com/share?via=whitevinyluk&text=Dalen ware...&url=http://dalenware.com" target="_blank"><img src="img/t.gif" alt="Twitter" /></a>
+
+    <!-- Google+ -->
+    <a href="https://plus.google.com/share?url=http://dalenware.com" target="_blank"><img src="img/g.gif" alt="Google" /></a>
+
+    </div>
+
+
+</div>
